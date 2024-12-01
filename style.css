@@ -1,0 +1,48 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.search-bar,
+.filters,
+.buttons {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#moviesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  width: 200px;
+  margin: 10px;
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+}
+
+.movie .title {
+  font-weight: bold;
+}
+
+.movie .rating {
+  margin-top: 5px;
+}
