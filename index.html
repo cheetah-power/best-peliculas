@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Cine en Acción</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>BIENVENIDO AL CINE EN ACCIÓN</h1>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar..." />
+        <button onclick="search()">Buscar</button>
+      </div>
+      <div class="filters">
+        <label for="year">Año:</label>
+        <input type="number" id="year" min="1900" max="2024" />
+        <label for="title">Título:</label>
+        <input type="text" id="title" />git
+        <label for="rating">Clasificación:</label>
+        <input type="text" id="rating" />
+        <label for="releaseDate">Fecha de lanzamiento:</label>
+        <input type="date" id="releaseDate" />
+        <button onclick="applyFilters()">Aplicar filtros</button>
+      </div>
+      <div class="buttons">
+        <button onclick="topMoviesByRating()">Top 3 por rating</button>
+        <button onclick="sortByReleaseDate()">Ordenar por fecha de lanzamiento</button>
+        <button onclick="sortByTitle()">Ordenar por título</button>
+      </div>
+      <div id="moviesContainer"></div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
